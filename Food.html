@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .navigation_container{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        background-color: blanchedalmond;
+        position: fixed;
+        width: 98%;
+    }
+    .navin{ display: flex;
+
+    }
+    h3{padding-bottom: 10px;}
+
+    .container{justify-content:space-evenly; 
+    background-color:rgb(245, 51, 51);
+}
+   
+
+        
+        .hero{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        justify-content:space-around;
+        }
+        .hero_image{border:solid 3px black;}
+
+          .hero_content{ padding-top: 30px;
+
+        }
+
+  
+    .tag{ background-color: crimson;}    
+    
+        
+        
+ 
+     
+   
+    /* .gap{ background-color: bisque; 
+         gap:50px; 
+         }  */
+
+    .features{
+        display: flex;
+        justify-content:space-evenly;
+        background-color: rgb(194, 41, 41);
+        border: solid 2px black;
+    } 
+    .fea1{padding-top: 15px;}
+    /* p{align-content: space-around;}  */
+    .f1{display: flex;justify-content:space-evenly;}
+    .f2{display: flex;justify-content:space-evenly;}
+    .f3{display: flex;justify-content:space-evenly;}
+    .bgc{background-color: black;height: 2px;width:98%;}
+    .manu{text-align: center;}
+    .omanu{
+        background-color: chartreuse;
+        width: fit-content;               
+    }
+    .grid_container{display: grid;
+    gap: 10px;
+    background-color:lightyellow;
+    
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows:auto;
+    border: solid black; 
+    /* width: 98%; */
+    /* background-color:blueviolet; */
+    grid-template-areas:"i1 i2 i2 i3"
+                        "i1 i4 i4 i3" 
+                        "i5 i5 i6 i6"  
+                        "i8 i7 i7 i9"  ;
+                        
+                    }
+    
+    
+    
+    .img1{grid-area: i1;height: 400px;width: 300px;border: solid 2px rgb(121, 121, 95);}
+    .img1:hover{transform: scale(0.8); border-radius: 50px; transition-duration: 4s;}
+
+    .img2{grid-area: i2;height: 200px;width: 600px;}
+    .img2:hover{transform:rotateY(45deg); border-radius: 20px; transition-duration: 2s;}
+
+    .img3{grid-area: i3;height: 400px;width: 318px;}
+    .img3:hover{transform: scale(0.8); border-radius: 50px; transition-duration: 4s;}
+
+    .img4{grid-area: i4;height: 200px;width: 600px;}
+    .img4:hover{transform:rotateY(65deg); border-radius: 20px;transition-duration: 3s;}
+
+    .img5{grid-area: i5;height: 400px;width: 600px;}
+    .img5:hover{transform:rotate(-180deg) scale(0.5) translateX(-100px);transition-duration: 5s;}
+
+    .img6{grid-area: i6;height: 400px;width: 618px;}
+    .img6:hover{transform:rotate(-180deg) scale(0.5) translateY(-100px);transition-duration: 5s;}
+
+    .img7{grid-area: i7;height: 400px;width: 600px;}
+    .img7:hover{transform: scale(0.8); border-radius: 35%; transition-duration: 4s;}
+
+    .img8{grid-area: i8;height: 400px;width: 300px;}
+    .img8:hover{transform: scale(1.1); border-radius: 50%; transition-duration: 4s;}
+
+    .img9{grid-area: i9;height: 400px;width: 318px;}
+    .img9:hover{transform: scale(1.1); border-radius: 50%; transition-duration: 4s;}
+
+
+    .foot{display: flex;
+    justify-content: space-evenly;
+    background-color: mediumpurple;}
+    .foot1{display: flex;padding-top: 30px;}
+    .foot2{text-decoration: underline;}
+
+    </style>
+</head>
+<body>
+      <nav class="navigation_container"> 
+          
+            <div class="navin"><img src="/Image/food_icon.png" alt="" height="50px" width="40px">
+            <h3>TASTE OF AKOLA</h3>
+            </div>
+ 
+            <div><img src="/Image/More_button_icon.png" alt="" height="50px" width="60px"><br>MENU
+                
+                <!-- <button type="menu">manu
+                <datalist>
+                <select>
+                    <option value="Home"></option>
+                    <option value="About"></option>
+                    <option value="Services"></option>
+                    <option value="PortFolio"></option>
+                    <option value="Blog"></option>
+                    <option value="Contact Us"></option>
+                </select>
+            </datalist>
+        </button> -->
+            </div>
+            
+
+          
+          <!-- <h3><img src="/Image/food_icon.png" alt="" height="30px" width="30px">Company</h3>
+          <img src="/Image/More_button_icon.png" alt="" height="50px" width="60px"> -->
+      </nav>
+      <br><br><br>
+
+
+      <div class="container">
+          <div class="hero">
+              <div class="hero_image"><img src="/Image/food_image.png" alt="" height="300px" width="350px"></div>
+              <div class="hero_content">
+                  <div class="tag">Prize Less Than Imagination</div>
+                  <h2>It's not just food,<br>It's an experience</h2>
+                  <h6>Just try taste and enjoy it</h6>
+                  <button class="exploer">Explore Now</button>
+                   
+              </div>
+          </div>
+        </div><br>
+
+          
+
+
+
+        <section class="features">
+
+            <div class="f1">
+             <div class="fea1"><img src="/Image/discount-2542619_1280.png" alt="" height="40px" width="30px"></div>
+              <div > <p><strong>Discount Voucher</strong><br> On order your food,different offers is here</p>
+              </div>
+            
+
+            </div>
+            <div class="f2">
+                <div class="fea1"><img src="/Image/woman_vegetable.png" alt="" height="40px" width="30px"></div>
+                <div > <p><strong>fresh Healthy Food</strong><br> Good food choices are good investments</p></div>
+            </div>
+            
+            <div class="f3">
+                <div class="fea1"><img src="/Image/house.png" alt="" height="40px" width="30px"></div>
+                <div ><p><strong>Fast Home Delivery</strong><br> We care for your precious time</p></div>
+            </div>
+        </section><br>
+
+        <!-- <div class="bgc"></div><br><br> -->
+
+        <div class="manu">
+            <button class="omanu">OUR MENU</button>
+            <h3>Explore our menu</h3>
+        </div>
+
+
+        <div class="grid_container">
+            <img class="img1" src="/Image/img1-stew.jpg" alt="">
+            <img class="img2" src="/Image/img2-vegetables.png" alt="">
+            <img class="img3" src="/Image/img3-rice-dish-.jpg" alt="">
+            <img class="img4" src="/Image/img4-ai-generated.png" alt="">
+            <img class="img5" src="/Image/img5-green.jpg" alt="">
+            <img class="img6" src="/Image/img6-dish.png" alt="">
+            <img class="img7" src="/Image/img7-cup.jpg" alt="">
+            <img class="img8" src="/Image/img8-couscous.jpg" alt="">
+            <img class="img9" src="/Image/woman_vegetable.png" alt="">
+          
+        </div>
+
+        <footer class="foot">
+            <br>
+            <div class="foot1"><img src="/Image/food_icon.png" alt=""  height="50px" width="40px">
+            <h3>Company</h3></div>
+
+            <div><p><strong class="foot2">Main Links</strong><br> Order Traking <br>New Oreder <br> Contact Us <br>News & Bloggs</p></div>
+
+            <div><p><strong class="foot2">Support</strong><br> About Us <br>Privacy Policy <br>Terms & Conditions </p></div>
+
+            <div><p><strong class="foot2">Support</strong><br> <input type="text" name="Email Id" placeholder="Email Id"><br><Strong class="foot2">Follow Us</Strong><br> 
+             <a href="https://www.facebook.com/">  <img src="/Image/facebook-icon.jpg"  alt="" height="30px" width="25px"></a>
+             <a href="https://twitter.com/">       <img src="/Image/twitter-icon.jpg"   alt="" height="30px" width="25px"></a>
+             <a href="https://www.instagram.com/"> <img src="/Image/instagram-icon.jpg" alt="" height="30px" width="25px"></a>
+             <a href="https://www.youtube.com/">   <img src="/Image/you-tube-icon.jpg"  alt="" height="30px" width="25px"></p></div></a> 
+
+
+        </footer>
+
+
+        
+</body>
+</html>
